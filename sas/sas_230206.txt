@@ -1,0 +1,23 @@
+%sysfunc
+->%sysfunc(function,format)
+->%qsysfunc(function,format)
+- format: optional format to apply to the result of function
+
+array
+->array{n,m}=>maximum number of element is n*m
+array statement: array var (*) var1 var2 ...
+
+bufsize
+->sets the size of each of these buffers
+bufno
+-> sets the number of buffers
+
+data A;
+call symput('variable','value');
+run;
+%put &=variable;
+%put variable=&variable;
+-> call symput('a','b') = 매크로 변수 a의 값은 b로 설정
+
+index(word,source);
+-> word에서 source의 위치를 반환
